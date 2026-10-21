@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+ <parameter name="browser" value="chrome"/>
+  <groups>
+  <run>
+  <include name="ST"/>
+  </run>
+  </groups>
+    <classes>
+       <class name="com.ninzahrm.Login.Login_test"/>
+    <class name="com.ninzahrm.Dashboard.Dashboard_test"/>
+    <class name="com.ninzahrm.Employees.Employees_test"/>
+      <class name="com.ninzahrm.Resources.Resources_test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
